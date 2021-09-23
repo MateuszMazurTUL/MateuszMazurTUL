@@ -1,0 +1,279 @@
+body{
+    background-color: rgba(0,0,0,0.7);
+    word-wrap: break-word;
+    /* text */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+        
+    color: white;
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+nav {
+    background-color: #001219;
+    background: linear-gradient(90deg, #001c27 30%, #001219 50%, #001c27 60%);
+    
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    
+    
+    height: 20px;
+    min-height: 3%;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 40px;
+    margin: 0;
+    
+    display: flex;
+    -webkit-flex-direction: row ;
+    -moz-flex-direction: row ;
+    -ms-flex-direction: row ;
+    -o-flex-direction: row ;
+    flex-direction: row ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#CssPortfolio{
+    color:#005F73;
+}
+
+.menu-btn-list {
+    width: 555px;
+    
+    display: flex;
+    -webkit-flex-direction: row ;
+    -moz-flex-direction: row ;
+    -ms-flex-direction: row ;
+    -o-flex-direction: row ;
+    flex-direction: row ;
+    
+    justify-content: space-between;
+}
+
+#Menu-About:hover{
+    color:#005F73;
+}
+
+#Menu-Viaxar-project:hover{
+    color:#0A9396;
+}
+
+#Menu-Hobby:hover{
+    color:#EE8434;
+}
+
+#Menu-Contact:hover{
+    color:#F4C095;
+}
+
+#nav_project{
+    top: 70px;
+    visibility: hidden;
+}
+
+section {
+    background-color: #a5f;
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.interiorSection{
+    width: 1600px;
+    max-height: 60vh;
+    
+    margin-bottom: 15vh;
+    
+    display: flex;
+    -webkit-flex-direction: row ;
+    -moz-flex-direction: row ;
+    -ms-flex-direction: row ;
+    -o-flex-direction: row ;
+    flex-direction: row ;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ContactBar{      
+    width: 1600px;
+}
+
+#ContactBar a{
+
+    display: flex;
+    -webkit-flex-direction: row ;
+    -moz-flex-direction: row ;
+    -ms-flex-direction: row ;
+    -o-flex-direction: row ;
+    flex-direction: row ;
+    
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#ContactBar h2{
+
+    display: flex;
+    -webkit-flex-direction: row ;
+    -moz-flex-direction: row ;
+    -ms-flex-direction: row ;
+    -o-flex-direction: row ;
+    flex-direction: row ;
+    
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.me-png{
+    height: 500px;
+    max-width: 600px;
+    
+    max-height: 50vh;
+}
+
+.logo-png{
+    height: 50px;
+    width: auto;
+    
+    max-height: 20vh;
+}
+
+.imgHolder{
+    width: 600px;
+}
+
+.describe {
+    margin-left: 0px;
+    width: 1000px;
+}
+
+#About{
+    background-color: #005F73;
+    background: linear-gradient(90deg, #007b95 0%, #005F73 50%, #007b95 100%);
+}
+
+#Viaxar-project{
+    background-color: #0A9396;
+    background: linear-gradient(90deg, #0b9a9e 0%, #0A9396 50%, #0b9a9e 100%);
+}
+#Viaxar-project>.interiorSection {
+    flex-direction: row-reverse;
+}
+
+#Runner-project{
+    background-color: #816E94;
+    background: linear-gradient(90deg, #8b779f 0%, #816E94 50%, #8b779f 100%);
+}
+
+#PerlinUnity-project{
+    background-color: #673C4F;
+    background: linear-gradient(90deg, #724358 0%, #673C4F 50%, #724358 100%);
+}
+#PerlinUnity-project>.interiorSection {
+    flex-direction: row-reverse;
+}
+
+#PerlinJS-project{
+    background-color: #AD9BAA;
+    background: linear-gradient(90deg, #b5a2b2 0%, #AD9BAA 50%, #b5a2b2 100%);
+}
+
+#Other-project{
+    background-color: #857C8D;
+    background: linear-gradient(90deg, #908698 0%, #857C8D 50%, #908698 100%);
+}
+#Other-project>.interiorSection {
+    flex-direction: row-reverse;
+}
+
+#Hobby{
+    background-color: #EE8434;
+    background: linear-gradient(90deg, #f98a37 0%, #EE8434 50%, #f98a37 100%);
+}
+
+#Contact{
+    background-color: #F4C095;
+    background: linear-gradient(90deg, #e8b78e 0%, #ddae87 50%, #e8b78e 100%);
+}
+
+#ContactBar{
+    display: flex;
+    -webkit-flex-direction: row ;
+    -moz-flex-direction: row ;
+    -ms-flex-direction: row ;
+    -o-flex-direction: row ;
+    flex-direction: row ;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Contact>.interiorSection>.describe>h1{
+    font-size: 160px;
+}
+
+
+/*ANIMATION*/
+
+.animation_describe {
+	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+
+.animation_img {
+	animation: puff-in-center 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
