@@ -10,7 +10,16 @@ drobny resizing interiorSection
 
 */
 $(document).ready(function() {
-
+    function setViewport() {
+        var vw = window.innerWidth * 0.01;
+        document.documentElement.style.setProperty('--vw', `${vw}px`);
+        
+        var vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }setViewport();
+    
+    
+    
     var divID;
     var divIndex;
     var animationTime = 900;
@@ -36,7 +45,12 @@ $(document).ready(function() {
     
     //remake section array with each resize
     $( window ).resize(function() {
-        filldivArr()
+        setViewport();
+        console.log(window.innerWidth);
+        console.log(document.documentElement.clientWidth);
+        console.log($('section').css('min-width'));
+        
+        filldivArr();
     });
     
     

@@ -1,3 +1,12 @@
+@media only screen and (min-width: 8in) {
+body {
+  min-width: 100vh;
+  min-width: -webkit-fill-available;
+}
+html {
+  width: -webkit-fill-available;
+}
+
 body{
     background-color: rgba(0,0,0,0.7);
     word-wrap: break-word;
@@ -82,7 +91,7 @@ nav {
 
 section {
     background-color: #a5f;
-    min-width: 100vw;
+    min-width:  calc(var(--vw, 1vw) * 100);
     min-height: 100vh;
     
     display: flex;
@@ -220,10 +229,12 @@ section {
     background-color: #F4C095;
     background: linear-gradient(90deg, #e8b78e 0%, #ddae87 50%, #e8b78e 100%);
 }
-#Contact.interiorSection{
+
+#Contact .interiorSection{
     
-    position: relative;
-    right: 600px;
+    /*position: relative;
+    right: 400px;*/
+    
 }
 
 #ContactBar{
@@ -294,4 +305,5 @@ section {
     filter: blur(0px);
     opacity: 1;
   }
+}
 }
