@@ -46,9 +46,6 @@ $(document).ready(function() {
     //remake section array with each resize
     $( window ).resize(function() {
         setViewport();
-        console.log(window.innerWidth);
-        console.log(document.documentElement.clientWidth);
-        console.log($('section').css('min-width'));
         
         filldivArr();
     });
@@ -90,31 +87,34 @@ $(document).ready(function() {
     //smooth scroll to next div when scroll activ
     $(document).scroll(function(){ 
        var scrollTop = window.pageYOffset;// || document.documentElement.scrollTop; 
-        if(timeScroll == true){
-            var divIndex = checkDivIndex(lastScrollTop);
-            console.log('acD '+divIndex);
+            if(timeScroll == true){
+                var divIndex = checkDivIndex(lastScrollTop);
+                console.log('acD '+divIndex);
             
-           if (scrollTop > lastScrollTop){
-              // downscroll code
+                if (scrollTop > lastScrollTop){
+                    // downscroll code
 
-               if (divIndex<(divArr.length-1)){
-               $([document.documentElement, document.body]).animate({
-                    scrollTop: $(divArr[divIndex+1].id).offset().top
-                }, animationTime);
-               animation(divIndex+1);}
-           } else {
-              // upscroll code
-               if (divIndex>0){
-                $([document.documentElement, document.body]).animate({
-                    scrollTop: $(divArr[divIndex-1].id).offset().top
-                }, animationTime);
-                animation(divIndex-1);}
-           }
-            timeScroll = false;
-            timeoutScroll();
+                   if (divIndex<(divArr.length-1)){
+                       $([document.documentElement, document.body]).animate({
+                            scrollTop: $(divArr[divIndex+1].id).offset().top
+                        }, animationTime);
+                       animation(divIndex+1);
+                   }
+                } else {
+                      // upscroll code
+                       if (divIndex>0){
+                        $([document.documentElement, document.body]).animate({
+                            scrollTop: $(divArr[divIndex-1].id).offset().top
+                        }, animationTime);
+                        animation(divIndex-1);
+                       }
+                }
+                timeScroll = false;
+                timeoutScroll();
 
+            
         }
-       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
     });
     
     //scroll for menu buttons

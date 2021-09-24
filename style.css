@@ -228,8 +228,12 @@ section {
 #Contact{
     background-color: #F4C095;
     background: linear-gradient(90deg, #e8b78e 0%, #ddae87 50%, #e8b78e 100%);
-}
+    
+    justify-content: flex-start;
+    align-items: flex-end;
 
+}
+    
 #Contact .interiorSection{
     
     /*position: relative;
