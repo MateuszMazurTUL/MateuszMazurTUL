@@ -1,13 +1,13 @@
 /*
 TODO
 
-=błąd z przewijaniem strony
+błąd z przewijaniem strony
+-zdjęcia
+
 zoom, phone size
 --- text wypływający poza div
--opisy
-zdjęcia
 drobny resizing interiorSection
--animacje
+
 */
 $(document).ready(function() {
 
@@ -45,10 +45,16 @@ $(document).ready(function() {
     function timeoutScroll(){
         setTimeout(function() {
             timeScroll = true;
-        }, (animationTime + 100));
+        }, (animationTime + 200));
     }
     
-    
+    //add class to start animation
+    function animation(pos){
+       console.log(pos); 
+        $(divArr[pos].id+' .describe').addClass('animation_describe');
+        $(divArr[pos].id+' .me-png').addClass('animation_img');
+    }
+    //animation(0);
     //check actual div
     function checkDivIndex(pos){
         
@@ -56,7 +62,7 @@ $(document).ready(function() {
         var first = true;
         //reverse array
         divArr.slice().reverse().forEach(val => {
-            if(val.top <= (pos + 400) && first) {
+            if(val.top <= (pos + (window.innerHeight/2)) && first) {
                 r = val.index;
                 first = false;
             }
@@ -72,23 +78,23 @@ $(document).ready(function() {
        var scrollTop = window.pageYOffset;// || document.documentElement.scrollTop; 
         if(timeScroll == true){
             var divIndex = checkDivIndex(lastScrollTop);
-
+            console.log('acD '+divIndex);
             
            if (scrollTop > lastScrollTop){
               // downscroll code
 
-               if (divIndex<(divArr.length-1))
+               if (divIndex<(divArr.length-1)){
                $([document.documentElement, document.body]).animate({
                     scrollTop: $(divArr[divIndex+1].id).offset().top
                 }, animationTime);
-               //animation(divIndex+1);
+               animation(divIndex+1);}
            } else {
               // upscroll code
-               if (divIndex>0)
+               if (divIndex>0){
                 $([document.documentElement, document.body]).animate({
                     scrollTop: $(divArr[divIndex-1].id).offset().top
                 }, animationTime);
-                //animation(divIndex-1);
+                animation(divIndex-1);}
            }
             timeScroll = false;
             timeoutScroll();

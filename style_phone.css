@@ -1,0 +1,90 @@
+@media only screen and (min-width: 450px) and (max-width: 1600px) {
+    body {
+        background-color: lightblue;
+        font-size: 300%;
+    }
+    
+    nav {
+        font-size: 50px;
+        height: 22vh;
+        
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    
+    .menu-btn-list {
+        width: 200vw;
+        height: 100%;
+        
+        display: flex;
+        -webkit-flex-direction: row ;
+        -moz-flex-direction: row ;
+        -ms-flex-direction: row ;
+        -o-flex-direction: row ;
+        flex-direction: row ;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav text{
+        font-size: 26px;
+        height: 20vh;
+    }
+    
+    section{
+        min-width: ;
+        max-width: ;
+        width: 329vw;
+        
+        height: 300vh
+    }
+    
+    
+    
+    .interiorSection{
+        max-width: inherit;
+        width: 299vw;
+        
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        
+    }
+    
+    .interiorSection:nth-child(even) {
+        background-color: aqua;
+    }
+
+    .describe{
+        max-width: 299vw;
+        min-width: 249vw;
+    }
+    
+    #About{
+    background-color: #005F73;
+    background: linear-gradient(90deg, #007b95 0%, #005F73 50%, #007b95 100%);
+}
+
+
+    #Viaxar-project>.interiorSection {
+        flex-direction: column;
+    }
+
+
+    #PerlinUnity-project>.interiorSection {
+        flex-direction: column;
+    }
+
+    #Other-project>.interiorSection {
+        flex-direction: column;
+    }
+}
+
