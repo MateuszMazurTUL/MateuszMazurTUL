@@ -1,14 +1,20 @@
-/*
-TODO
+function detectMob() {
+    const toMatch = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i
+    ];
+    
+    return toMatch.some((toMatchItem) => {
+        return navigator.userAgent.match(toMatchItem);
+    });
+}
+var isMobile = detectMob();
 
-błąd z przewijaniem strony
--zdjęcia
-
-zoom, phone size
---- text wypływający poza div
-drobny resizing interiorSection
-
-*/
 $(document).ready(function() {
     function setViewport() {
         var vw = window.innerWidth * 0.01;
@@ -85,6 +91,7 @@ $(document).ready(function() {
     var lastScrollTop = 0;
     
     //smooth scroll to next div when scroll activ
+    if(!isMobile){
     $(document).scroll(function(){ 
        var scrollTop = window.pageYOffset;// || document.documentElement.scrollTop; 
             if(timeScroll == true){
@@ -115,7 +122,7 @@ $(document).ready(function() {
             
         }
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-    });
+    });}
     
     //scroll for menu buttons
     $('.menu-btn').click(function(){
