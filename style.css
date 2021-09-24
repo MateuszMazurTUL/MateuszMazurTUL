@@ -113,12 +113,18 @@ section {
     -o-flex-direction: row ;
     flex-direction: row ;
     
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    
+    font-size: 1.5em;
 }
 
+#Contact .describe{
+    width; 1600px;
+}
+    
 #ContactBar{      
-    width: 1600px;
+    width: 100%;
 }
 
 #ContactBar a{
@@ -147,15 +153,37 @@ section {
     justify-content: space-between;
     align-items: center;
     
+    
+    width: 111px;
+}
+    
+#ContactBar h2 span{
+
+    
+    
+    width: 301px;
+}
+#ContactBar h2{
+    margin: 100px;
+    width: 6000px;
+        
+}
+
+.me-png img{
+    min-height: 20%;
+    max-height: 80%;
+    min-width: 20%;
+    max-width: 60%;
+    width: 600px;
 }
 
 .me-png{
-    height: 500px;
-    max-width: 600px;
-    
-    max-height: 80vh;
+    min-height: 20%;
+    max-height: 100%;
+    min-width: 20%;
+    max-width: 100%;
 }
-
+    
 .logo-png{
     height: 50px;
     width: auto;
@@ -164,15 +192,18 @@ section {
 }
 
 .imgHolder{
-    width: 600px;
+    min-width: 60%;
+    min-height: 60%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .describe {
     margin: 100px;
     
     width: 1000px;
-    min-width: 10vh;
-    max-width: 80vh;
+    min-width: 40%;
+    max-width: 80%;
     
     height: auto;
     max-height: inherit;
@@ -216,10 +247,15 @@ section {
     background-color: #857C8D;
     background: linear-gradient(90deg, #908698 0%, #857C8D 50%, #908698 100%);
 }
+    
 #Other-project>.interiorSection {
     flex-direction: row-reverse;
 }
-
+    
+#Other-project>.interiorSection img{
+    max-width: 80%;
+}
+    
 #Hobby{
     background-color: #EE8434;
     background: linear-gradient(90deg, #f98a37 0%, #EE8434 50%, #f98a37 100%);
