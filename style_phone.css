@@ -251,7 +251,7 @@ section {
 
 
 #ContactBar{
-    font-size: 0.8em;
+    font-size: 0.7em;
     display: flex;
     -webkit-flex-direction: column ;
     -moz-flex-direction: column ;
