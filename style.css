@@ -279,14 +279,16 @@ section {
     
     justify-content: flex-start;
     align-items: flex-end;
-
+    
+    
 }
     
 #Contact .describe{
     width: 100%;
     /*position: relative;
     right: 400px;*/
-    
+    position: relative;
+    top: -100px;
 }
 
 #Contact>.interiorSection>.describe>h1{
