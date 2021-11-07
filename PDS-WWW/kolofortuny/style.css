@@ -21,9 +21,14 @@ body{
     align-items: center;
 }
 
+#description{
+    font-size: 60px;
+    padding-top: 40px;
+}
+
 #mystery_word{
     width: 100%;
-    height: 700px;
+    height: 500px;
     
     display: flex;
     justify-content: space-around;
@@ -35,7 +40,7 @@ body{
 }
 
 .underline{
-    width: calc(80%/3);
+    width: calc(80%/8);
     height: 12px;
     background: white;
     border-radius: 50px / 50px;
@@ -44,10 +49,13 @@ body{
     justify-content: space-around;
     align-items: flex-end;
     position: relative;
+    
+    
 }
 
 #mystery_word span {
-    font-size: 60px;
+    font-size: calc(600px/8);;
+    padding-bottom: 10px;
 }
 
 #lifes{
@@ -65,9 +73,64 @@ body{
     background: linear-gradient(120deg, rgb(7, 123, 7) 0%, rgb(135, 209, 135) 100%);
 }
 .isLifeFalse{
-    background: #8d8d8d;
+    background: linear-gradient(120deg, rgb(116, 61, 61) 0%, rgb(229, 38, 38) 100%);
 }
 
+#btn_list{
+    width: 40%;
+    height: 70px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
 
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgba(0, 0, 0,0.2);
+}
+
+.btn:hover {background-color: #3e8e41}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px rgba(0, 0, 0,0.2);
+  transform: translateY(4px);
+}
+
+#about{
+    position: absolute;
+    bottom: 80px;
+    left: auto;
+    right: auto;
+    
+    width: 800px;
+    height: 100px;
+    
+    font-size: 40px;
+    
+    background-color: rgba(0, 0, 0,0.68);
+    border-radius: 80px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    
+    visibility:hidden;
+}
 
 #wrap{position: relative;float: left;width: 100%;border: 1px solid red;}
