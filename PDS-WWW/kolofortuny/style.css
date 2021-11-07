@@ -111,6 +111,10 @@ body{
 }
 
 #about{
+    visibility:hidden;
+}
+
+.popout {
     position: absolute;
     bottom: 80px;
     left: auto;
@@ -129,8 +133,65 @@ body{
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    
-    visibility:hidden;
 }
 
-#wrap{position: relative;float: left;width: 100%;border: 1px solid red;}
+#helper{
+    visibility: hidden;
+}
+#letterKey{
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    
+    color: rgba(255, 255, 255,0);
+    font-size: 6;}
+
+.animationAppearLetter{animation: appeardisappear 1.25s;}
+.goodAnswer{animation: goodAnswer 1.25s;}
+.badAnswer{animation: badAnswer 1.25s;}
+
+@keyframes appeardisappear {
+    0% {
+    color: rgba(255, 255, 255,0.0);
+        font-size: 60px;
+  }
+  50% {
+    color: rgba(255, 255, 255,1);
+        font-size: 440px;
+  }
+  100% {
+    color: rgba(255, 255, 255,0);
+        font-size: 60px;
+  }
+}
+
+@keyframes goodAnswer {
+    0% {
+    color: rgba(255, 255, 255,0.0);
+        font-size: 60px;
+  }
+  50% {
+    color: rgb(58, 222, 77);
+        font-size: 440px;
+  }
+  100% {
+    color: rgba(255, 255, 255,0);
+        font-size: 60px;
+  }
+}
+
+@keyframes badAnswer {
+    0% {
+    color: rgba(255, 255, 255,0.0);
+        font-size: 60px;
+  }
+  50% {
+    color: rgb(240, 49, 49);
+        font-size: 440px;
+  }
+  100% {
+    color: rgba(255, 255, 255,0);
+        font-size: 60px;
+  }
+}
