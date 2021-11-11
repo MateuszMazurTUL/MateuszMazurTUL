@@ -4,6 +4,7 @@ document.getElementById("btn_author").addEventListener("click", toggleAbout);
 
 var country;
 var attempts = 6;
+var letters = ['q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m'];
 
 var isAbout = false;
 function toggleAbout(){
@@ -22,6 +23,7 @@ function hideAbout(){
 }
 
 function play(){
+    prepareDivs();
     refillAttempt();
     emptyMysteryWord();
     hideBtn();//hide buttons
@@ -29,6 +31,11 @@ function play(){
     showHelper();//show information about inut letter
     newCountry();
     activeKeyBind();
+}
+
+function prepareDivs(){
+    document.getElementById("overall").innerHTML +=
+        '<div id="mystery_word">            </div>            <div id="lifes">                <div class="underline lifebar isLifeTrue"></div>                <div class="underline lifebar isLifeTrue"></div>                <div class="underline lifebar isLifeTrue"></div>                <div class="underline lifebar isLifeTrue"></div>                <div class="underline lifebar isLifeFalse"></div>                <div class="underline lifebar isLifeFalse"></div>            </div>'
 }
 
 function refillAttempt(){
@@ -53,6 +60,7 @@ function removeAttempt(){
             lb[i].classList.add('isLifeFalse');
             attempts--;
             checkAttemptsCondition();
+            checkWinCondition();
             break;
         }
     }    
@@ -70,14 +78,26 @@ function prepareMysteryWord(length){
     }
 }
 
+function hideDivs(){
+    document.getElementById("overall").innerHTML = '<div id="description">Guess the country name</div>';
+}
+
 function hideBtn(){
     document.getElementById("btn_play").style.visibility = 'hidden';
     document.getElementById("btn_author").style.visibility = 'hidden';
 }
 
+function showBtn(){
+    document.getElementById("btn_play").style.visibility = 'visible';
+    document.getElementById("btn_author").style.visibility = 'visible';
+}
+
 function showHelper(){
-    
     document.getElementById("helper").style.visibility = 'visible';
+}
+
+function hideHelper(){
+    document.getElementById("helper").style.visibility = 'hidden';
 }
 
 function newCountry(){
@@ -90,9 +110,7 @@ function newCountry(){
 
 function checkAnswer(letter){
     for(let i=0;i<country.length;i++){
-        
-        if (country[0].toLowerCase()==letter) return true;
-        if (country[i]==letter) return true;
+        if (country[i].toLowerCase()==letter.toLowerCase()) return true;
     };
     return false;
 }
@@ -113,28 +131,45 @@ function diplayLetter(letter,pos){
 }
 
 function activeKeyBind(){
-    document.addEventListener("keydown",  function (e) {
-        var isGoodAnswer = checkAnswer(e.key);
-        if (isGoodAnswer) {
+    document.addEventListener("keydown",  evListener); 
+}
+
+function evListener(e){
+    console.log(e.key);
+    if(letters.includes(e.key.toLowerCase())){
+            var isGoodAnswer = checkAnswer(e.key);
+            if (isGoodAnswer) {
             displayGoodLetter(e.key);
             document.getElementById("letterKey").innerHTML = '<b class="goodAnswer">'+e.key+'</b>';
-        }
-        else{
+            }
+            else{
             removeAttempt();
             document.getElementById("letterKey").innerHTML = '<b class="badAnswer">'+e.key+'</b>';
-        }
+            }
 
-//        console.log(e.keyCode);
-//        console.log(e.key);
-    }, true);
+            //        console.log(e.keyCode);
+            //        console.log(e.key);
+        }
+}
+
+function deactiveKeyBind(){
+    document.removeEventListener("keydown", evListener); 
 }
 
 //check player lose
 function checkAttemptsCondition(){
-    if(attempts == 0) console.log("GAME OVER");
+    if(attempts == 0) {
+        hideHelper();
+        hideDivs();
+        deactiveKeyBind();
+        showBtn();
+        console.log("GAME OVER")
+    };
 }
 
-
+function checkWinCondition(){
+    if(attempts == 0) console.log("GAME OVER");
+}
 
 
 
