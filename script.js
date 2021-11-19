@@ -91,7 +91,8 @@ $(document).ready(function() {
     var lastScrollTop = 0;
     
     //smooth scroll to next div when scroll activ
-    if(!isMobile){
+    //if(!isMobile){ turn on smooth scroll
+    if(false){
     $(document).scroll(function(){ 
        var scrollTop = window.pageYOffset;// || document.documentElement.scrollTop; 
             if(timeScroll == true){

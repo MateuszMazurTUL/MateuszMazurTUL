@@ -222,8 +222,70 @@ section {
     min-height: inherit;
     
 }
+#overall-project{
+    display: flex;
+    -webkit-flex-direction: row ;
+    -moz-flex-direction: row ;
+    -ms-flex-direction: row ;
+    -o-flex-direction: row ;
+    flex-direction: row ;
+    flex-wrap: wrap;
+}
 
+.overall-project-single{
+    width: 300px;
+    max-width: 50vw;
+    max-height: 40vh;
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    display: flex;
+    -webkit-flex-direction: column ;
+    -moz-flex-direction: column ;
+    -ms-flex-direction: column ;
+    -o-flex-direction: column ;
+    flex-direction: column ;
+    
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+    
+    font-size: 1.5em;
+}
 
+.overall-project-single img{
+    width: 20vw;
+    max-width: 20vw;
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 20vh;
+    max-height: 20vh;
+}
+
+.overall-project-single .describe{
+    
+    margin: 10px;
+    
+    width: 1000px;
+    min-width: 40%;
+    max-width: 80%;
+    
+    height: auto;
+    max-height: inherit;
+    min-height: inherit;
+}
+
+#overall-project{
+    background-color: #005F73;
+    background: linear-gradient(90deg, #007b95 0%, #005F73 50%, #007b95 100%);
+}
+    
+#About{
+    background-color: #005F73;
+    background: linear-gradient(90deg, #007b95 0%, #005F73 50%, #007b95 100%);
+}
+    
 #About{
     background-color: #005F73;
     background: linear-gradient(90deg, #007b95 0%, #005F73 50%, #007b95 100%);
