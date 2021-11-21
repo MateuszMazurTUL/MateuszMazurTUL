@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <title>pesel</title>
+</head>
+<body>
+    <script type="text/javascript" src="find_valid_pesels.js"></script>		
+    <script type="text/javascript" src="show_all_pesels.js"></script>		
+    <script type="text/javascript" src="validate_one_pesel.js"></script>
+    
+    <div id="overall">
+        <form action="/action_page.php">
+           
+            <label for="year">Rok:</label>
+            <input type="number" id="year" name="year"><br><br>
+            
+            <label for="month">Miesiąc:</label>
+            <input type="number" id="month" name="month"><br><br>
+
+            <label for="day">Dzień:</label>
+            <input type="number" id="day" name="day"><br><br>
+            
+            <label for="lname">5 ostatnich cyfr peselu:</label>
+            <input type="number" id="lname" name="lname"><br><br>
+            
+            <input type="submit" value="Walidacja">
+            <input type="submit" value="Pokaż wszystkie">
+            <input type="submit" value="Znajdź zgodne">
+        </form>
+    </div>
+</body>
+</html>

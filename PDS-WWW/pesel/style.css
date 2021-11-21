@@ -1,0 +1,24 @@
+body{
+    background-image: url(bgn.jpg);
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+    
+    font-family: 'Roboto', sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#overall{
+    width: 800px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
