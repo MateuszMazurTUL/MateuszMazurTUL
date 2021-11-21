@@ -91,7 +91,8 @@ $(document).ready(function() {
     var lastScrollTop = 0;
     
     //smooth scroll to next div when scroll activ
-    if(!isMobile){
+    //if(!isMobile){ turn on smooth scroll
+    if(false){
     $(document).scroll(function(){ 
        var scrollTop = window.pageYOffset;// || document.documentElement.scrollTop; 
             if(timeScroll == true){
@@ -135,13 +136,43 @@ $(document).ready(function() {
                 div = '#About';
                 break;
             case 'Menu-Viaxar-project':
-                div = '#Viaxar-project';
+                div = '#overall-project';
                 break;
             case 'Menu-Hobby':
                 div = '#Hobby';
                 break;
             case 'Menu-Contact':
                 div = '#Contact';
+                break;
+        }
+        
+        if (div != undefined)
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(div).offset().top
+        }, animationTime);
+    });
+    
+    //scroll for menu buttons
+    $('.overall-project-single').click(function(){
+        timeScroll = false;
+        timeoutScroll();
+        console.log(this);
+        let div;
+        switch(this.id){
+            case 'overall-project-single-viaxar':
+                div = '#Viaxar-project';
+                break;
+            case 'overall-project-single-ots':
+                div = '#Runner-project';
+                break;
+            case 'overall-project-single-pnu':
+                div = '#PerlinUnity-project';
+                break;
+            case 'overall-project-single-pnjs':
+                div = '#PerlinJS-project';
+                break;
+            case 'overall-project-single-other':
+                div = '#Other-project';
                 break;
         }
         
