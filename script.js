@@ -42,7 +42,7 @@ $(document).ready(function() {
                 divArr.push({
                     id: pid,
                     index: pindex,
-                    top: $(pid).offset().top
+                    top: $(pid).offset()?.top
                 });
             }
         });
@@ -135,8 +135,8 @@ $(document).ready(function() {
             case 'Menu-About':
                 div = '#About';
                 break;
-            case 'Menu-Viaxar-project':
-                div = '#overall-project';
+            case 'Menu-project':
+                div = '#Comarch';
                 break;
             case 'Menu-Hobby':
                 div = '#Hobby';
@@ -181,4 +181,17 @@ $(document).ready(function() {
             scrollTop: $(div).offset().top
         }, animationTime);
     });
+	
+	const images = document.querySelectorAll('#logos_background img');
+
+	images.forEach(img => {
+		// Losowa pozycja w poziomie (lewo-prawo)
+		const randomLeft = Math.random() * 60 + 20 ;
+		// Losowa pozycja w pionie (góra-dół)
+		const randomTop = Math.random() * 60 + 20;
+
+		img.style.left = `${randomLeft}%`;
+		img.style.top = `${randomTop}%`;
+	});
+
 });

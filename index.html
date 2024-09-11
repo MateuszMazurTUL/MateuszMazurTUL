@@ -8,21 +8,33 @@
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="clear-css.css">
     <link rel="stylesheet" media="only screen and (min-width: 1600px), only screen and (min-device-width: 1400px)" href="style.css">
-    <link rel="stylesheet" media="only screen and (min-width: 600px) and (max-width: 1600px), only screen and (min-width: 600px) and (max-width: 1600px)" href="style_laptop.css">
-    <link rel="stylesheet" media="only screen and (max-width: 600px), only screen and (max-device-width: 600px)" href="style_phone.css ">
+    <!--<link rel="stylesheet" media="only screen and (min-width: 600px) and (max-width: 1600px), only screen and (min-width: 600px) and (max-width: 1600px)" href="style_laptop.css">
+    <link rel="stylesheet" media="only screen and (max-width: 600px), only screen and (max-device-width: 600px)" href="style_phone.css ">-->
 </head>
 <body>
+   <div id="logos_background">
+		<img src="img/logos/pngwing.com%20(1).png" alt="logo" class="logo_background" />
+		<img src="img/logos/pngwing.com%20(2).png" alt="logo" class="logo_background"/>
+		<img src="img/logos/pngwing.com%20(3).png" alt="logo" class="logo_background"/>
+		<img src="img/logos/pngwing.com%20(4).png" alt="logo" class="logo_background"/>
+		<img src="img/logos/pngwing.com%20(5).png" alt="logo" class="logo_background"/>
+		<img src="img/logos/pngwing.com%20(6).png" alt="logo" class="logo_background"/>
+		<img src="img/logos/pngwing.com%20(7).png" alt="logo" class="logo_background"/>
+		<img src="img/logos/pngwing.com%20(8).png" alt="logo" class="logo_background"/>
+		<img src="img/logos/pngwing.com%20(9).png" alt="logo" class="logo_background"/>
+		<img src="img/logos/pngwing.com%20(10).png" alt="logo" class="logo_background"/>
+		<img src="img/logos/pngwing.com.png" alt="logo" class="logo_background"/>
+   </div>
     <div id="overall">
         <nav>
             <span><b>Mateusz Maurycy Mazur <span id="CssPortfolio">Portfolio</span></b></span>
             <div class="menu-btn-list">
-                <div class="menu-btn" id="Menu-Viaxar-project"><b>Projekty</b></div>
+                <div class="menu-btn" id="Menu-project"><b>Projekty</b></div>
                 <div class="menu-btn" id="Menu-About"><b>O mnie</b></div>
-                <div class="menu-btn" id="Menu-Hobby"><b>Hobby</b></div>
                 <div class="menu-btn" id="Menu-Contact"><b>Kontakt</b></div>
             </div>
         </nav>
-        <nav id="nav_project">
+        <!--<nav id="nav_project">
             <div class="menu-btn-list">
                 <div class="menu-btn" id="Menu-About"><b>Viaxar</b></div>
                 <div class="menu-btn" id="Menu-Viaxar-project"><b>Runner</b></div>
@@ -30,125 +42,185 @@
                 <div class="menu-btn" id="Menu-Contact"><b>Perlin Noise JS</b></div>
                 <div class="menu-btn" id="Menu-Contact"><b>Other</b></div>
             </div>
-        </nav>
+        </nav>-->
         
         
-        <section class="project" id="overall-project">
-           <div class="overall-project-single" id="overall-project-single-viaxar">
-                <div class="imgHolder"><img src="img/viaxar.PNG" alt="it's me here" class="me-png"></div>
-                <div class="describe">
-                    <h2>Viaxar</h2>
-                </div>
-            </div>
-            
-            <div class="overall-project-single" id="overall-project-single-ots">
-            <div class="imgHolder">
-            <img src="img/runner.PNG" alt="game img" class="me-png">
-            </div>
-            <div class="describe">
-                <h2>Over The Sunset</h2>
-            </div></div>
-            
-            <div class="overall-project-single" id="overall-project-single-pnu">
-            <div class="imgHolder">
-            <img src="img/perlinUnity.PNG" alt="Game imG" class="me-png">
-            </div>
-            <div class="describe">
-                <h2>Perlin noise - Unity</h2>
-            </div></div>
-        </section>
-        
-        <section class="project" id="Viaxar-project"><div class="interiorSection">
-            <div class="imgHolder"><img src="img/viaxar.PNG" alt="it's me here" class="me-png"></div>
-            <div class="describe">
-                <h2>Viaxar</h2>
-                <p>...po galicyjskiemu podróżować, to organizer podróży, przewodnik po najciekawszych miejscach w okolicy.</p>
-                <p>Pomysł powstał podczas jednej z podróży. Tej spontanicznej. Nagle okazuje się, że macie tydzień wolnego, więc na szybko kupujesz tanie loty, pakujesz walizkę, a następnego dnia jesteś w zupełnie nowym miejscu. W tym wszystkim ciężko znaleźć czas na dokładnie zaplanowanie wycieczek, wyszukanie ciekawych miejsc, czy wytyczenie optymalnej trasy zwiedzania.</p>
-                <p>Z Viaxar zaplanujesz swój pobyt, dowiesz się o najciekawszych miejscach w okolicy, zapomnisz o studiowaniu atlasów i przewodników w poszukiwaniu miejsc wartych Twojej uwagi.</p>
-                <p>Projekt został stworzony w oparciu o Google API i w całości korzysta z dobrodziejstw biblioteki giganta. Miliony użytkowników Google Maps stworzyło bazę, z której można czerpać szczegółowe informacje o danych miejscach, wraz z takimi smaczkami jak godziny otwarcia czy ocena użytkowników.</p>
-                <p>Technologicznie wykonany w JavaScript. Można uruchomić projekt lokalnie w oknie przeglądarki. Wymaga on jednak pobrania własnego klucza API. Więcej można przeczytać w pliku readme na GitHubie</p>
-            </div></div>
-        </section>
-        
-        <section class="project" id="Runner-project"><div class="interiorSection">
-            <div class="imgHolder">
-            <img src="img/runner.PNG" alt="game img" class="me-png">
-            </div>
-            <div class="describe">
-                <h2>Over The Sunset</h2>
-                <p>Gra typu runner na system android oparta na silniku Unity.</p>
-                <p>Postać sterowana przez gracza porusza się w prawą stronę ekranu, a zadaniem jest przeskakiwanie między kolejnymi wysepkami.</p>
-                <p>Mechanike sterowania oparłem tutaj o prostą, lecz nie zwykle wciągającą zasade jednego przycisku, spopularyzowaną tak bardzo po sukcesie flappy bird, czy timber. Mimo swojej prostoty, jest to bardzo wciągający system, nastawiony na pobijanie kolejnych rekordów.</p>
-                <p>Projekt ten jest dla mnie wprowadzeniem do świata Unity i gamedevu.</p>
-            </div></div>
-        </section>
-        
-        <section class="project" id="PerlinUnity-project"><div class="interiorSection">
-            <div class="imgHolder">
-            <img src="img/perlinUnity.PNG" alt="Game imG" class="me-png">
-            </div>
-            <div class="describe">
-                <h2>Perlin noise - Unity</h2>
-                <p>Implementacja szumu perlina na silniku unity do tworzenia proceduralnego świata w trójwymiarze. W oparciu o kurs Sebastiana Lague</p>
-                <p>Program generuje dwuwymiarowy szum perlina na podstawie, którego wyciągan jest wysokość dla widoku 3D. Następnie program tworzy polygon mesh i renderuje teren z użyciem shaderów.<br>Teren może być generowany w nieskończoność dzięki systemowi chunków.</p>
-            </div></div>
-        </section>
-        
-        <section class="project" id="Other-project"><div class="interiorSection">
-            <div class="describe">
-                <h2>Inne</h2>
-                <p>W trakcie rozwoju i edukacji poznałem inne programy czy technologie, z których korzystam:</p>
-                <ul>
-                    <li>GitHub</li>
-                    <li>Jira</li>
-                    <li>C / C++ / C# / Java / Python / Javascript</li>
-                    <li>Web Design</li>
-                    <li>Microsoft Visual Studio / Brackets / IntelliJ</li>
-                    <li>Unity</li>
-                    <li>Arduino</li>
-                </ul>
-                
-                <h3>Blender</h3>
-                <p>Jestem w trakcie nauki modelowania 3D. Miałem okazje korzystać z 3DS Maxa, jednak to właśnie Blender przemówił do mnie ze względu na intuicyjnośc obsługi.</p>
-                <h3>UX Design</h3>
-                <p>Przy projektowaniu patrzę na produkt od strony użytkownika i wdrążam interfejsy zgodnie z zasadami UX Design. Podczas projektu grupowego na studiach zaprojektowaliśmy front-end aplikacji mobilnej w programie Figma. <br>Z dbałością o szczegóły, estetykę, intuicyjność, funkcjonalność i wygode użytkowania.</p>
-                
-            </div></div>
-        </section>
-        
-        <section id="About"><div class="interiorSection">
-            <div class="imgHolder"><img src="img/me.png" alt="it's me here" class="me-png"></div>
-            <div class="describe">
-                <h2>O Mnie</h2>
-                <p>Programista aplikacji mobilnych. Specjalizacja w technologii react native i android. Praca przy 5 aplikacjach udostępnionych w sklepach mobilnych. Doświadczenie w 3 aplikacjach w React Native, jedna w Android, własna aplikacja w Unity.</p><br><br>
-                <p>Wybór programowania był pochodną moich zainteresowań rozwiązywaniem zagadek logicznych, poszukiwań zależności przyczynowo-skutkowych, inaczej umiejętnościami logicznego rozumowania, analizy - umysłu ścisłego.</p><br><br>
-                <p>Kiedy napisałem pierwsze "Hello World!" wiedziałem gdzie jest moje miejsce. Konsekwantnie zacząłem dążyć do celu. Kursy dostępne w internecie, następnie technikum o profilu informatycznym. Grupowy projekt front-end'u sklepu internetowego podczas wymiany międzynarodowej. I wreszcze studia na Politechnice Łódzkiej.</p><br><br>
-                <p>Jestem osobą ambitną, która chce się wykazać i "dać coś od siebie". W przyszłości widzę się jako pionier nowoczesnych rozwiązań.</p>  
+        <section class="project" id="hero-section">
+        	<div class="project-padding">
+				<div id="hero-section-title">
+					<h3>Mateusz Maurycy Mazur</h3>
+					<h1>Software Mobile Developer</h1>
+				</div>
+				<div class="block_text">
+					<div class="highlighted_text">
+						Typescript | Javascript | Kotlin | Python | Java | C# | HTML | CSS
+						<br/>
+						Android | ReactNative | Firebase | Jetpack Compose | BLE | REST API | MVVM | JUnit | SQLite | NestJS | BLE
+						<br/>
+						Webstorm | Android Studio | Xcode | VS Code | GitHub | GitLab | Godot | Unity | Jira | Figma
+					</div>
+						<br/>
+						<br/>
+					<span>
+						Jestem doświadczonym Mobile Developerem specjalizującym się w tworzeniu aplikacji mobilnych przy użyciu technologii React Native i Androida. W pracy łączę znajomość nowoczesnych frameworków z umiejętnością projektowania intuicyjnych interfejsów użytkownika.
+					</span>
+					<br/>
+					<br/>
 
-            </div></div>
+					<span>
+						Od 2022 roku pracuję w Comarch, gdzie współtworzyłem aplikacje z sektora e-zdrowia, koncentrując się na rozwoju logiki biznesowej, integracji z urządzeniami BLE oraz implementacji interfejsów. Moje doświadczenie obejmuje zarówno projekty komercyjne, jak i autorskie.
+					</span>
+					<br/>
+					<br/>
+
+					<span>
+					  Karierę rozpocząłem podczas studiów na Politechnice Łódzkiej, które ukończyłem w 2020 roku. W ramach pracy inżynierskiej stworzyłem aplikację mobilną „Tour Guide” opartą na Google Maps.
+				   </span>
+			   </div>
+		   </div>
+        </section>        
+        
+		<section class="project" id="Comarch">
+			<div class="interiorSection">
+				<div class="describe">
+					<h2>COMARCH</h2>
+					<br/><br/>
+					<span>
+						Od 2022 roku pracuję w Comarch, gdzie miałem okazję współtworzyć aplikacje z sektora e-zdrowia. Moje zadania obejmowały rozwój logiki biznesowej, integrację z urządzeniami Bluetooth Low Energy (BLE) oraz implementację zaawansowanych interfejsów użytkownika. Współpracowałem przy kilku projektach komercyjnych, które miały bezpośredni wpływ na poprawę jakości opieki zdrowotnej.
+					</span>
+					<br/><br/>
+
+					<h4>HomeHealth 2.0</h4> <a href="https://play.google.com/store/apps/details?id=com.comarch.homehealth2">Google Play</a>
+					<a href="https://www.comarch.pl/healthcare/produkty/comarch-homehealth/">Strona produktu</a>
+					<br/><br/>
+					<span>
+						HomeHealth 2.0 to aplikacja mobilna służąca do monitorowania stanu zdrowia pacjentów zdalnie, umożliwiając pomiar parametrów medycznych w domu przy użyciu urządzeń BLE. Moja rola obejmowała integrację aplikacji z wieloma urządzeniami medycznymi oraz implementację systemu powiadomień o krytycznych wynikach. <br/>Technologie: Kotlin, Jetpack Compose, BLE, REST API, MVVM.
+					</span>
+					<br/><br/>
+
+					<h4>Diagnostic Point</h4> <a href="https://www.comarch.pl/healthcare/produkty/zdalna-opieka-medyczna/punkt-diagnostyczny/">Strona produktu</a>
+					<br/><br/>
+					<span>
+						Diagnostic Point to aplikacja wspierająca punkty diagnostyczne w zarządzaniu danymi pacjentów i wynikami badań. Pracowałem nad optymalizacją procesów komunikacji z serwerami oraz poprawą bezpieczeństwa przechowywania danych medycznych. <br/>Technologie: React Native, BLE, Firebase, REST API.
+					</span>
+					<br/><br/>
+
+					<h4>Event ECG</h4> <a href="https://play.google.com/store/apps/details?id=com.comarch.eventecg">Google Play</a>
+					<br/><br/>
+					<span>
+						Event ECG to aplikacja monitorująca pracę serca pacjenta, przesyłająca wyniki do systemu opieki zdrowotnej w czasie rzeczywistym. Moja praca koncentrowała się na analizie danych z urządzeń medycznych i zapewnieniu precyzyjnej wizualizacji danych w aplikacji. <br/>Technologie: Kotlin, BLE, Jetpack Compose, SQLite.
+					</span>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="project" id="Tour Guide">
+			<div class="interiorSection">
+				<div class="describe">
+					<h2>Tour Guide</h2>
+					<br/><br/>
+					<span>
+						Tour Guide to projekt stworzony na potrzeby mojej pracy inżynierskiej. Aplikacja pełni rolę asystenta planowania podróży, pomagając użytkownikom w organizacji ich wypraw poprzez proponowanie tras, atrakcji oraz punktów gastronomicznych, dostosowanych do preferencji użytkownika.
+					</span>
+					<br/><br/>
+
+					<span>
+						Projekt składa się z dwóch aplikacji: serwerowej i mobilnej. Aplikacja mobilna, zbudowana w React Native, oferuje intuicyjny interfejs, umożliwiający użytkownikom przeglądanie atrakcji turystycznych oraz zapisywanie miejsc, które chcą odwiedzić. Aplikacja serwerowa zapewnia natomiast wsparcie backendowe, zarządzając bazą danych użytkowników oraz punktów turystycznych.
+					</span>
+					<br/><br/>
+
+					<span>
+						Moja rola obejmowała zarówno zaprojektowanie, jak i implementację obu aplikacji, z naciskiem na integrację z zewnętrznymi API, umożliwiającą pobieranie danych o miejscach i trasach turystycznych. Projekt uwzględniał również rozwój funkcji GPS, które umożliwiają nawigację użytkownika po wybranych trasach.
+					</span>
+					<br/><br/>
+
+					<span>
+						Technologie użyte w projekcie: React Native, NestJS, SQLite, REST API, GPS, Firebase.
+					</span>
+				</div>
+			</div>
+		</section>
+
+        
+        <section class="project" id="Viaxar-project">		
+        	<div class="interiorSection">
+				<div class="describe">
+					<h2>Over The Sunset</h2>
+					<br/>
+					<br/>
+					<p>Gra typu runner na system android oparta na silniku Unity.</p>
+					<p>Postać sterowana przez gracza porusza się w prawą stronę ekranu, a zadaniem jest przeskakiwanie między kolejnymi wysepkami.</p>
+					<p>Mechanike sterowania oparłem tutaj o prostą, lecz niezwykle wciągającą zasade jednego przycisku, spopularyzowaną tak bardzo po sukcesie flappy bird, czy timber. Mimo swojej prostoty, jest to bardzo wciągający system, nastawiony na pobijanie kolejnych rekordów.</p>
+					<p>Projekt ten jest dla mnie wprowadzeniem do świata Unity i gamedevu.</p>
+					<br/>
+
+				</div>
+				<br/>
+				<br/>
+				<div class="describe">
+					<h2>Perlin noise - Unity</h2>
+					<br/>
+					<br/>
+					<p>Implementacja szumu perlina na silniku unity do tworzenia proceduralnego świata w trójwymiarze. W oparciu o kurs Sebastiana Lague</p>
+					<p>Program generuje dwuwymiarowy szum perlina na podstawie, którego wyciągan jest wysokość dla widoku 3D. Następnie program tworzy polygon mesh i renderuje teren z użyciem shaderów.<br>Teren może być generowany w nieskończoność dzięki systemowi chunków.</p>
+					<br/>
+
+				</div>
+				<br/>
+				<br/>
+            </div>
         </section>
         
-        <section id="Hobby">
-            <div class="interiorSection">
-            <div class="imgHolder"><img src="img/hobby.jpg" alt="hobby img" class="me-png"></div>
-            <div class="describe">
-                <h2>Moje pasje!</h2>
-                <p>Jestem geekiem. Wszystkie ciekawostki, nowe technologie czy popkulture łykam jak pelikan. Uwielbiam gry, planszowe, komputerowe czy też te w formie escape roomów. Nie przejdzie koło mnie obojętnie kino, z którego lubię wyciągnąć coś więcej niż 2h rozrywki. A książka? A owszem, Fantasy!</p>
-                <p>Aktywnie spędzanie czasu to dla mnie pływanie na SUP zwłaszcza kiedy towarzyszom mi widoki natury, wprost na wyciągniecie ręki. W sumie z wodą mógłbym się nie rozstawać. W zimę dla odmiany zamieniam jedną deskę na drugą, w tym wypadku snowboard. A jak już o deskach mowa to nie pogardzę również longboardem. Zaczynam jazdę na rolkach, w sumie drugie podejście. Nie jestem pewien czy się przekonam.</p>
-                <p>Wymarzony weekend? W gronie przyjaciół przy grillu, bądź city break do nowego wspaniałego miasta, tudzież kraju. A chwaliłem się fotografią?</p>
-            </div></div>
+        <section id="About">
+			<div class="interiorSection">
+				<div class="describe">
+					<h2>O Mnie</h2>
+					<br/>
+					<br/>
+					<p>Programista aplikacji mobilnych. Specjalizacja w technologii react native i android. Praca przy 5 aplikacjach udostępnionych w sklepach mobilnych. Doświadczenie w 3 aplikacjach w React Native, jedna w Android, własna aplikacja w Unity.</p><br><br>
+					<p>Wybór programowania był pochodną moich zainteresowań rozwiązywaniem zagadek logicznych, poszukiwań zależności przyczynowo-skutkowych, inaczej umiejętnościami logicznego rozumowania, analizy - umysłu ścisłego.</p><br><br>
+					<p>Kiedy napisałem pierwsze "Hello World!" wiedziałem gdzie jest moje miejsce. Konsekwantnie zacząłem dążyć do celu. Kursy dostępne w internecie, następnie technikum o profilu informatycznym. Grupowy projekt front-end'u sklepu internetowego podczas wymiany międzynarodowej. I wreszcze studia na Politechnice Łódzkiej.</p><br><br>
+					<p>Jestem osobą ambitną, która chce się wykazać i "dać coś od siebie". W przyszłości widzę się jako pionier nowoczesnych rozwiązań.</p>  
+					<br/>
+					<br/>
+					<h4>Moje pasje!</h4>
+					<br/>
+					<br/>
+					<p>Jestem geekiem. Wszystkie ciekawostki, nowe technologie czy popkulture łykam jak pelikan. Uwielbiam gry, planszowe, komputerowe czy też te w formie escape roomów. Nie przejdzie koło mnie obojętnie kino, z którego lubię wyciągnąć coś więcej niż 2h rozrywki. A książka? A owszem, Fantasy!</p><br/><br/>
+					<p>Aktywnie spędzanie czasu to dla mnie pływanie na SUP zwłaszcza kiedy towarzyszom mi widoki natury, wprost na wyciągniecie ręki. W sumie z wodą mógłbym się nie rozstawać. W zimę dla odmiany zamieniam jedną deskę na drugą, w tym wypadku snowboard. A jak już o deskach mowa to nie pogardzę również longboardem. Zaczynam jazdę na rolkach, w sumie drugie podejście. Nie jestem pewien czy się przekonam.</p><br/><br/>
+					<p>Wymarzony weekend? W gronie przyjaciół przy grillu, bądź city break do nowego wspaniałego miasta, tudzież kraju. A chwaliłem się fotografią?</p>
+				</div>
+           
+            </div>
         </section>
         
-        <section id="Contact"><div class="interiorSection">
-            
-            <div class="describe">
-                <h1>Kontakt</h1>
-                <div id="ContactBar">
-                    <h2><a href="https://github.com/MateuszMazurTUL"><img src="img/github.png" alt="github" class="logo-png">/MateuszMazurTUL</a></h2>
-                    <h2><a href="mailto:mateuszmazur1996@gmail.com"><img src="img/gmail.png" alt="gmail" class="logo-png">mateuszmazurdev@gmail.com</a></h2>
-                    <h2><img src="img/phone.png" alt="phone" class="logo-png"><span>690 699 312</span></h2>
-                </div>
-            </div></div>
+        <section id="Contact">
+			<div class="interiorSection">
+				<div class="describe">
+					<h1>Kontakt</h1>
+					<div id="ContactBar">
+						<h4>
+							<a href="https://github.com/MateuszMazurTUL">
+								<img src="img/github.png" alt="github" class="logo-png">
+								/MateuszMazurTUL
+							</a>
+						</h4>
+						<h4>
+							<a href="mailto:mateuszmazur1996@gmail.com">
+								<img src="img/gmail.png" alt="gmail" class="logo-png">
+								mateuszmazurdev@gmail.com
+							</a>
+						</h4>
+						<h4>
+							<img src="img/phone.png" alt="phone" class="logo-png">
+							<span>
+								690 699 312
+							</span>
+						</h4>
+					</div>
+				</div>
+            </div>
         </section>
     </div>
 </body>
