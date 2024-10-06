@@ -129,7 +129,7 @@
 	.interiorSection{
 		width: 1600px;
 		max-width: 100vw;
-		max-height: 60vh;
+		max-height: 100vh;
 
 		margin-bottom: 15vh;
 
@@ -229,7 +229,7 @@
 		min-width: 20%;
 		max-width: 60%;
 	}*/
-
+	
 	.imgHolder{
 		max-height: 100%;
 		max-width: 100%;
@@ -242,18 +242,47 @@
 	}
 
 	.imgHolder img{
-		background-color: #ffffff;
 		border-radius: 16px;
-		padding-top: 4px;
-		padding-bottom: 4px;
+		padding-top: 8px;
+		padding-bottom: 8px;
 
-		width: 30em;
 		max-height: 100%;
 		max-width: 100%;
-		height: 400px;
-		width: 200px;
+		width: 30em;
 		object-fit: contain
 	}
+
+	.imgLimit{
+		max-height: 400px;
+		max-width: 200px;
+	}
+
+	.imgLimit img{
+		background-color: #fff;
+		padding-bottom: 14px;
+		padding-top: 14px;
+		max-height: 400px;
+		max-width: 200px;
+	}
+	
+	#comarch_img{
+		height: 100%;
+		padding: 10px;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+	}
+	
+	#comarch_img img{
+		margin: 20px;
+	}
+	
+	.imgHolder .divider{
+		height: 50px;
+		width: 20px
+		background-color: aqua;
+	}
+
 
 	.logo-png{
 		height: 50px;
@@ -263,24 +292,19 @@
 	}
 
 	
-	#logos_background img{
-		position: absolute;
-		left: 30%;
-		top: 30%;
-	}
-
-	.logo_background img{
-		height: 50px;
-		width: 50px;
-
+	#logos_background{
+		flex-direction: row;
+		width: 100%;
 	}
 
 	#logos_background img{
 		height: 150px;
 		width: 150px;
 		opacity: 0.35;
-	    filter: grayscale(100%); /* Konwertuje obrazek na 100% skali szarości */
+	    filter: grayscale(100%);
 		z-index: -1;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 
@@ -303,7 +327,7 @@
 		-moz-flex-direction: column ;
 		-ms-flex-direction: column ;
 		-o-flex-direction: column ;
-		flex-direction: column;
+		flex-direction: row;
 		flex-wrap: wrap;
 		justify-items: flex-start;
 		align-items: flex-start;
@@ -426,7 +450,6 @@
 		max-width: 80%;
 		padding: 100px;
 		padding-right: 50vh;
-		padding-bottom: 20vh;
 	}
 
 	#Other-project>.interiorSection img{

@@ -7,24 +7,11 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="clear-css.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="only screen and (min-width: 1600px), only screen and (min-device-width: 1400px)" href="style.css">
     <!--<link rel="stylesheet" media="only screen and (min-width: 600px) and (max-width: 1600px), only screen and (min-width: 600px) and (max-width: 1600px)" href="style_laptop.css">
     <link rel="stylesheet" media="only screen and (max-width: 600px), only screen and (max-device-width: 600px)" href="style_phone.css ">-->
 </head>
 <body>
-   <div id="logos_background">
-		<img src="img/logos/pngwing.com%20(1).png" alt="logo" class="logo_background" />
-		<img src="img/logos/pngwing.com%20(2).png" alt="logo" class="logo_background"/>
-		<img src="img/logos/pngwing.com%20(3).png" alt="logo" class="logo_background"/>
-		<img src="img/logos/pngwing.com%20(4).png" alt="logo" class="logo_background"/>
-		<img src="img/logos/pngwing.com%20(5).png" alt="logo" class="logo_background"/>
-		<img src="img/logos/pngwing.com%20(6).png" alt="logo" class="logo_background"/>
-		<img src="img/logos/pngwing.com%20(7).png" alt="logo" class="logo_background"/>
-		<img src="img/logos/pngwing.com%20(8).png" alt="logo" class="logo_background"/>
-		<img src="img/logos/pngwing.com%20(9).png" alt="logo" class="logo_background"/>
-		<img src="img/logos/pngwing.com%20(10).png" alt="logo" class="logo_background"/>
-		<img src="img/logos/pngwing.com.png" alt="logo" class="logo_background"/>
-   </div>
     <div id="overall">
         <nav>
             <span><b>Mateusz Maurycy Mazur <span id="CssPortfolio">Portfolio</span></b></span>
@@ -77,7 +64,21 @@
 					  Karierę rozpocząłem podczas studiów na Politechnice Łódzkiej, które ukończyłem w 2020 roku. W ramach pracy inżynierskiej stworzyłem aplikację mobilną „Tour Guide” opartą na Google Maps.
 				   </span>
 			   </div>
+			   <br/>
 		   </div>
+			   <div id="logos_background">
+					<img src="img/logos/pngwing.com%20(1).png" alt="logo"  />
+					<img src="img/logos/pngwing.com%20(2).png" alt="logo" />
+					<img src="img/logos/pngwing.com%20(3).png" alt="logo" />
+					<img src="img/logos/pngwing.com%20(4).png" alt="logo" />
+					<img src="img/logos/pngwing.com%20(5).png" alt="logo" />
+					<img src="img/logos/pngwing.com%20(6).png" alt="logo" />
+					<img src="img/logos/pngwing.com%20(7).png" alt="logo" />
+					<img src="img/logos/pngwing.com%20(8).png" alt="logo" />
+					<img src="img/logos/pngwing.com%20(9).png" alt="logo" />
+					<img src="img/logos/pngwing.com%20(10).png" alt="logo"/>
+					<img src="img/logos/pngwing.com.png" alt="logo"/>
+			   </div>
         </section>        
         
 		<section class="project" id="Comarch">
@@ -112,6 +113,15 @@
 					</span>
 				</div>
 
+				<div class="imgHolder" id="comarch_img">
+					<div class="imgLimit">
+						<img src="img/hh2.png" alt="HomeHealth 2.0 screenshot" class="">
+					</div>
+					<div class="divider"></div>
+					<div class="imgLimit">
+						<img src="img/dp.jpg" alt="Diagnostic Point screenshot" class="">
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -139,6 +149,26 @@
 						Technologie użyte w projekcie: React Native, NestJS, SQLite, REST API, GPS, Firebase.
 					</span>
 				</div>
+				<div class="imgHolder">
+					<div class="imgLimit">
+						<img src="img/tg0.png" alt="Tour Guide mobile screenshot" class="me-png">
+					</div>
+					<div class="imgLimit">
+						<img src="img/tg1.png" alt="Tour Guide mobile screenshot" class="me-png">
+					</div>
+					<div class="imgLimit">
+						<img src="img/tg2.png" alt="Tour Guide server screenshot" class="me-png">
+					</div>
+					<div class="imgLimit">
+						<img src="img/tg3.png" alt="Tour Guide server screenshot" class="me-png">
+					</div>
+					<div class="imgLimit">
+						<img src="img/tg4.png" alt="Tour Guide server screenshot" class="me-png">
+					</div>
+					<div class="imgLimit">
+						<img src="img/tg5.png" alt="Tour Guide server screenshot" class="me-png">
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -154,7 +184,17 @@
 					<p>Mechanike sterowania oparłem tutaj o prostą, lecz niezwykle wciągającą zasade jednego przycisku, spopularyzowaną tak bardzo po sukcesie flappy bird, czy timber. Mimo swojej prostoty, jest to bardzo wciągający system, nastawiony na pobijanie kolejnych rekordów.</p>
 					<p>Projekt ten jest dla mnie wprowadzeniem do świata Unity i gamedevu.</p>
 					<br/>
+					<br/>
+					<br/>
 
+					<div class="imgHolder">
+						<div class="imgLimit">
+							<img src="img/runner.PNG" alt="it's me here" class="me-png">
+						</div>
+						<div class="imgLimit">
+							<img src="img/runner2.PNG" alt="it's me here" class="me-png">
+						</div>
+					</div>
 				</div>
 				<br/>
 				<br/>
@@ -165,7 +205,20 @@
 					<p>Implementacja szumu perlina na silniku unity do tworzenia proceduralnego świata w trójwymiarze. W oparciu o kurs Sebastiana Lague</p>
 					<p>Program generuje dwuwymiarowy szum perlina na podstawie, którego wyciągan jest wysokość dla widoku 3D. Następnie program tworzy polygon mesh i renderuje teren z użyciem shaderów.<br>Teren może być generowany w nieskończoność dzięki systemowi chunków.</p>
 					<br/>
+					<br/>
+					<br/>
 
+					<div class="imgHolder">
+						<div class="imgLimit">
+							<img src="img/perlinUnity1.PNG" alt="it's me here" class="me-png">
+						</div>
+						<div class="imgLimit">
+							<img src="img/perlinUnity2.PNG" alt="it's me here" class="me-png">
+						</div>
+						<div class="imgLimit">
+							<img src="img/perlinUnity3.PNG" alt="it's me here" class="me-png">
+						</div>
+					</div>
 				</div>
 				<br/>
 				<br/>
@@ -192,6 +245,18 @@
 					<p>Wymarzony weekend? W gronie przyjaciół przy grillu, bądź city break do nowego wspaniałego miasta, tudzież kraju. A chwaliłem się fotografią?</p>
 				</div>
            
+				<div class="imgHolder">
+					<div class="imgLimit">
+						<img src="img/me.png" alt="it's me here" class="me-png">
+					</div>
+					<div class="divider"></div>
+          			<div class="imgLimit">
+	           			<img src="img/hobby.jpg" alt="hobby img" class="me-png">
+          			</div>
+          			<div class="imgLimit">
+	           			<img src="img/hobby2.jpg" alt="hobby img" class="me-png">
+          			</div>
+            	</div>
             </div>
         </section>
         
